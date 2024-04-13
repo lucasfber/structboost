@@ -1,0 +1,15 @@
+.container {
+  /*sempre pegar a largura toda do seu parent*/
+  width: 100%;
+  /*crescer até esse valor, pode diminuir, mas nunca ultrapassar 
+    calculo do max-width:
+    1 - 1216px 
+    é retirado 30 desse valor por causa do padding 15px (30px)
+    então somamos, o padding dado ao max-width: 1216 + 30 = 1246
+  */
+  max-width: 124.6rem;
+  /* espaço de respiro, quando tivermos em telas menores que max-width */
+  padding: 0 1.5rem;
+  /* centralizar o container e seu conteudo */
+  margin: 0 auto;
+}
