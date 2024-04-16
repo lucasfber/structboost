@@ -1,0 +1,19 @@
+.btn-primary {
+  border: 1px solid var(--main-purple);
+  padding: 1rem 4.8rem;
+  color: white;
+  font-weight: 700;
+  background-color: var(--main-purple);
+  border-radius: 6.6rem;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: var(--main-purple);
+  border: 1px solid var(--main-purple);
+}
+
+.btn-primary.light-blue {
+}
