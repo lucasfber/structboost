@@ -35,3 +35,71 @@ header nav a {
 header nav a:hover {
   opacity: 0.7;
 }
+
+.s-hero {
+  position: relative;
+  width: 100%;
+  padding-top: 11.3rem;
+  /* height: 106.2rem; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.s-hero::after {
+  content: "";
+  width: 100%;
+  height: 22rem;
+  background-color: var(--pink-10);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.s-hero .text {
+  width: 100%;
+  max-width: 71.9rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 6.4rem;
+  position: relative;
+}
+
+.s-hero .text h1 {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  position: relative;
+}
+
+.s-hero .text h1::before {
+  content: "";
+  width: 100%;
+  max-width: 59.9rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 3.9rem;
+  bottom: -5px;
+  background: url("/imgs/strokes.svg") no-repeat center center;
+  z-index: -1;
+}
+
+.s-hero .text p {
+  letter-spacing: -0.03em;
+  color: var(--gray-300);
+
+  max-width: 55.6rem;
+  margin: 2.4rem auto 3.2rem auto;
+}
+
+.s-hero .text .arrow {
+  position: absolute;
+  left: 5.5rem;
+  bottom: 1.7rem;
+}
+
+.s-hero .ilustra {
+  padding: 0 15px;
+}

@@ -47,3 +47,13 @@ header .btn-acessar {
 header .btn-acessar:hover {
   color: #4b3e5a;
 }
+
+.s-hero {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(55, 30, 86, 1) 41%
+  );
+  height: 60rem;
+}
