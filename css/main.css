@@ -120,5 +120,49 @@ header nav a:hover {
   justify-content: space-between;
   padding-bottom: 12.8rem;
   border-bottom: 1px solid var(--gray-800);
-  margin-bottom: 30px;
+}
+
+.s-art-front {
+  padding: 12.8rem 0;
+}
+
+.s-art-front .title-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6.4rem;
+}
+
+.s-art-front .title-text p {
+  letter-spacing: -0.03em;
+  color: var(--gray-600);
+}
+
+.s-art-front .title-text .left {
+  max-width: 53.9rem;
+}
+
+.s-art-front .title-text .right {
+  max-width: 42.9rem;
+}
+
+.s-art-front .title-text h3 {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.s-art-front .title-text .left p {
+  max-width: 45.2rem;
+  margin-top: 1.6rem;
+}
+
+.s-art-front .all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.s-art-front .all .card-post:first-child {
+  /* grid-column: 1 / 3; */
+  grid-column: span 2;
 }
