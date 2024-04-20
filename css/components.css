@@ -99,4 +99,6 @@
   font-size: 1.6rem;
   /* letter-spacing: 0.48px; tava impedidndo de ficar igual o design */
   color: var(--gray-600);
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
 }
