@@ -18,6 +18,10 @@ header nav {
   gap: 3.2rem;
 }
 
+header .btn-menu {
+  display: none;
+}
+
 header nav ul {
   display: flex;
   /* align-items: center; NAO MUDA NADA */
@@ -102,6 +106,10 @@ header nav a:hover {
 
 .s-hero .ilustra {
   padding: 0 15px;
+}
+
+.s-hero .ilustra-mobile {
+  display: none;
 }
 
 .s-digital {
@@ -258,4 +266,113 @@ footer .copy {
 
 footer .copy strong {
   font-weight: 600;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .s-digital {
+    display: none;
+  }
+
+  .s-art-front {
+    display: none;
+  }
+
+  .s-newsletter {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .s-hero::after {
+    height: 13rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header .btn-menu {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .s-hero {
+    padding-top: 6rem;
+  }
+
+  .s-hero .text h1 {
+    max-width: 49rem;
+    margin: 0 auto;
+  }
+
+  .s-hero .text h1::before {
+    /* deixou a linha do tamanho do h1 (490px) */
+    background-size: 100%;
+    /* deixamos alinhado a esquerda do h1*/
+    left: 0;
+    bottom: -4px; /* -7px ficava bom*/
+  }
+
+  .s-hero .text p {
+    max-width: 41.6rem;
+  }
+
+  .s-hero .text .arrow {
+    left: 2rem;
+    max-width: 80px;
+    bottom: 3.7rem;
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    height: 7.2rem;
+  }
+
+  .logo {
+    max-width: 16rem;
+  }
+
+  .s-hero {
+    padding-top: 8.8rem;
+  }
+
+  .s-hero .text h1 {
+    font-size: 4rem;
+  }
+
+  .s-hero .text h1::before {
+    bottom: -6px;
+  }
+
+  .s-hero .text p {
+    font-size: 1.6rem;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+
+  .s-hero .text .arrow {
+    display: none;
+  }
+
+  .s-hero .ilustra {
+    display: none;
+  }
+
+  .s-hero .ilustra-mobile {
+    display: block;
+  }
+
+  .s-hero::after {
+    height: 22rem;
+  }
 }
