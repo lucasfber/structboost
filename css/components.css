@@ -100,5 +100,52 @@
   /* letter-spacing: 0.48px; tava impedidndo de ficar igual o design */
   color: var(--gray-600);
   font-size: 1.6rem;
-  letter-spacing: -0.03em;
+  /* letter-spacing: -0.03em; */
+}
+
+@media (max-width: 991px) {
+  .item-digital {
+    text-align: center;
+  }
+
+  .item-digital .icon {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .item-digital .info p br {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .item-digital .info h6 {
+    font-size: 2.2rem;
+  }
+
+  .item-digital .info p {
+    font-size: 1.8rem;
+    max-width: 31.9rem;
+  }
+
+  /* .item-digital .info p br {
+    display: block;
+  } */
+
+  .card-post {
+    padding: 1.6rem;
+  }
+
+  .card-post .image {
+    margin-bottom: 5.4rem;
+  }
+
+  .card-post .text h6 {
+    font-size: 1.8rem;
+  }
+  .card-post .text p {
+    font-size: 1.4rem;
+    letter-spacing: initial;
+    /* max-width: 29.3rem; */
+  }
 }

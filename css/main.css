@@ -86,7 +86,7 @@ header nav a:hover {
   position: absolute;
   left: 3.9rem;
   bottom: -5px;
-  background: url("/imgs/strokes.svg") no-repeat center center;
+  background: url("../imgs/strokes.svg") no-repeat center center;
   z-index: -1;
 }
 
@@ -274,15 +274,33 @@ footer .copy strong {
 
 @media (max-width: 1200px) {
   .s-digital {
-    display: none;
+    padding-top: 6.8rem;
+  }
+
+  .s-digital ul {
+    gap: 3.2rem;
+    padding-bottom: 6.8rem;
+  }
+
+  .item-digital .info p {
+    font-size: 1.6rem;
+  }
+
+  .item-digital .info h6 {
+    font-size: 2rem;
   }
 
   .s-art-front {
-    display: none;
+    padding: 6rem 0;
   }
 
-  .s-newsletter {
-    display: none;
+  .s-art-front .all {
+    gap: 1.6rem;
+  }
+
+  .s-art-front .all .card-post:first-child,
+  .s-art-front .all .card-post:nth-child(2) {
+    grid-column: span 3;
   }
 
   footer {
@@ -293,6 +311,32 @@ footer .copy strong {
 @media (max-width: 991px) {
   .s-hero::after {
     height: 13rem;
+  }
+
+  .s-digital ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s-art-front .title-text {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .s-art-front .title-text .left,
+  .s-art-front .title-text .right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .s-art-front .title-text .right {
+    margin-top: 8px;
+  }
+
+  .s-art-front .title-text .left p {
+    max-width: 100%;
+    margin-top: 8px;
   }
 }
 
@@ -330,6 +374,15 @@ footer .copy strong {
     left: 2rem;
     max-width: 80px;
     bottom: 3.7rem;
+  }
+
+  .s-art-front .all {
+    grid-template-columns: 1fr;
+  }
+
+  .s-art-front .all .card-post:first-child,
+  .s-art-front .all .card-post:nth-child(2) {
+    grid-column: initial;
   }
 }
 
@@ -374,5 +427,53 @@ footer .copy strong {
 
   .s-hero::after {
     height: 22rem;
+  }
+
+  .s-digital {
+    padding-top: 8rem;
+  }
+
+  .s-digital ul {
+    gap: 6.4rem;
+  }
+
+  .s-digital h3 {
+    font-size: 2.8rem;
+  }
+
+  .s-art-front {
+    padding: 8rem 0;
+  }
+
+  .s-art-front .title-text h3 {
+    font-size: 2.8rem;
+    max-width: 22.7rem;
+    margin: 0 auto;
+  }
+
+  .s-art-front .title-text .left p {
+    margin-top: 1.6rem;
+  }
+
+  .s-art-front .title-text .right {
+    display: none;
+  }
+
+  .s-art-front .all {
+    gap: 3.2rem;
+  }
+
+  .s-newsletter {
+    padding: 8.8rem 0;
+  }
+
+  .s-newsletter h2 {
+    font-size: 4rem;
+  }
+
+  .s-newsletter p {
+    font-size: 1.8rem;
+
+    max-width: 321px;
   }
 }
