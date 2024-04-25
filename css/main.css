@@ -80,14 +80,24 @@ header nav a:hover {
 
 .s-hero .text h1::before {
   content: "";
-  width: 100%;
+  width: 0%;
   max-width: 59.9rem;
   height: 2.2rem;
   position: absolute;
   left: 3.9rem;
   bottom: -5px;
-  background: url("../imgs/strokes.svg") no-repeat center center;
+  background: url("../imgs/strokes.svg") no-repeat left center;
   z-index: -1;
+  animation: drawLine 1s 0.5s ease-in forwards;
+}
+
+@keyframes drawLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .s-hero .text p {
@@ -102,6 +112,19 @@ header nav a:hover {
   position: absolute;
   left: 5.5rem;
   bottom: 1.7rem;
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .s-hero .ilustra {
